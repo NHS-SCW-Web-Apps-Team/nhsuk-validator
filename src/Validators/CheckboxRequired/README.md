@@ -1,4 +1,4 @@
-# At Least One
+# Checkbox Required
 
 ## When to use
 

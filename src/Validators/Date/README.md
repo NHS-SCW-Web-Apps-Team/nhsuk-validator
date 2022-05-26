@@ -1,4 +1,4 @@
-# At Least One
+# Date Validator
 
 ## When to use
 
@@ -9,7 +9,7 @@ Used to validate that a date constucted using the service manual [date input](ht
 - Ensure that you have an instance of the validator on the page. 
 
 - Add the validator for the field: 
-  ` nhsValidator.AtLeastOne['{Day field}', '{Month field}', '{Year field}', '{Error message}', {instance of validator});`
+  ` nhsValidator.AtLeastOne('{Day field}', '{Month field}', '{Year field}', '{Error message}', {instance of validator});`
 
 For example:
 

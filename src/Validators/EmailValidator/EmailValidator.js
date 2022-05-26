@@ -1,4 +1,4 @@
-export function EmailValidator(fieldName) {
+export function EmailValidator(fieldName, validator) {
   validator.addValidator(fieldName, [{
     method: function(field) {
       return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)

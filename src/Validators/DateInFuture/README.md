@@ -1,4 +1,4 @@
-# At Least One
+# Date in Future
 
 ## When to use
 
@@ -10,7 +10,7 @@ Used to validate that a date constucted using the service manual [date input](ht
 - Ensure that you have an instance of the validator on the page. 
 
 - Add the validator for the field: 
-  ` nhsValidator.DateInFuture['{Day field}', '{Month field}', '{Year field}', {instance of validator});`
+  ` nhsValidator.DateInFuture('{Day field}', '{Month field}', '{Year field}', {instance of validator});`
 
 For example:
 
