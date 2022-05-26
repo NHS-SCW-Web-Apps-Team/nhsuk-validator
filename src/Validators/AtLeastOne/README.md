@@ -2,7 +2,7 @@
 
 ## When to use
 
-Used to validate that at least one of a set of input fields have been filled out. Not recommended for use.
+Used to validate that at least one of a set of input fields have been filled out.
 
 ## How to use
 
