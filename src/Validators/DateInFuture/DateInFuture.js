@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-export function DateInFuture(bDay, bMonth, bYear, Validator) {
+export function DateInFuture(bDay, bMonth, bYear, validator) {
     var fieldArr = [
         bDay,
         bMonth,
@@ -16,14 +16,14 @@ export function DateInFuture(bDay, bMonth, bYear, Validator) {
                 var bmValue = validator.form.elements[field[1]].value.padStart(2, '0');
                 var byValue = validator.form.elements[field[2]].value;
                 if(validator.form.elements[field[0]].value.length  <= 0 || validator.form.elements[field[1]].value.length  <= 0
-                    || validator.form.elements[field[2]].value.length < 4){                       
-                    
+                    || validator.form.elements[field[2]].value.length < 4){
+
                     return ;
                 }
-                //var dob = [byValue, bmValue, bdValue].join('-');           
-                              
+                //var dob = [byValue, bmValue, bdValue].join('-');
+
                 if (bdValue !== "" && bmValue !== "" && byValue !== "") {
-                    //var diff = dayjs(dob, 'YYYY-MM-DD').diff(dayjs(), 'day'); // no working well, today and tomorrow return zero, that means two different days with the same result                   
+                    //var diff = dayjs(dob, 'YYYY-MM-DD').diff(dayjs(), 'day'); // no working well, today and tomorrow return zero, that means two different days with the same result
 
                     var CurrentDate = new Date();
                     var GivenDate = new Date(byValue,bmValue - 1,bdValue);
