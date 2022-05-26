@@ -16,7 +16,7 @@ In alignment with established NHS Design System standards:
 
 ### Initial setup
 
-Firstly ensure that the script is includiing in the page:
+Firstly ensure that the script is including in the page:
 `  <script src="/js/nhs-validator.js"></script> ` 
 
 Ensure that on the page to be validated, the fields are all within a `<form method="post"></form>` block.
@@ -35,16 +35,16 @@ Use the documentation for each validator for the steps to set them up and the re
 The following validators are currently available within the package:
 
 - [AtLeastOne](src/Validators/AtLeastOne/README.md)
-- BornBeforeDeath
-- CheckboxRequired
-- Date
-- DateInFuture
-- EmailVaildator
-- MustBeDifferent
-- NhsNumber
-- NumberGreaterThan
-- NumberGreaterThanOrEqual
-- OlderThanFour
-- PhoneNumber
-- PostCode
-- StringRequired
+- [BornBeforeDeath](src/Validators/BornBeforeDeath/README.md)
+- [CheckboxRequired](src/Validators/CheckboxRequired/README.md)
+- [Date](src/Validators/Date/README.md)
+- [DateInFuture](src/Validators/DateInFuture/README.md)
+- [EmailVaildator](src/Validators/EmailValidator/README.md)
+- [MustBeDifferent](src/Validators/MustBeDifferent/README.md)
+- [NhsNumber](src/Validators/NhsNumber/README.md)
+- [NumberGreaterThan](src/Validators/NumberGreaterThan/README.md)
+- [NumberGreaterThanOrEqual](src/Validators/NumberGreaterThanOrEqual/README.md)
+- [OlderThanFour](src/Validators/OlderThanFour/README.md)
+- [PhoneNumber](src/Validators/PhoneNumber//README.md)
+- [PostCode](src/Validators/PostCode/README.md)
+- [StringRequired](src/Validators/StringRequired/README.md)
