@@ -1,12 +1,12 @@
-# At Least One
+# Phone Number
 
 ## When to use
 
-Used to validate that at least one of a set of input fields have been filled out.
+Used to validate that a field has a validate phone number inputted to it. 
 
 ## How to use
 
 - Ensure that you have an instance of the validator on the page. 
 
 - Add the validator for the field: 
-  ` nhsValidator.AtLeastOne[{Array of field and values}], '{Error message}', {instance of validator});`
+  ` nhsValidator.PhoneNumber('{Field namem}', '{Error message}', {instance of validator});`
