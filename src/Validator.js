@@ -28,19 +28,19 @@ export class FormValidator {
     };
 
     escapeHtml(string) {
-        
-            if(String(string).includes("#39#")){                
+
+            if(String(string).includes("#39#")){
                  var apostrophe = String.fromCharCode(39);
                  var newString = String(string).replace("#39#",apostrophe);
                  return String(newString).replace(/[&<>"`=\/]/g, function fromEntityMap(s) {
                     return entityMap[s];
                 });
             }else{
-               
+
                 return String(string).replace(/[&<>"'`=\/]/g, function fromEntityMap(s) {
                     return entityMap[s];
                 });
-            }       
+            }
     };
 
     resetTitle() {
@@ -59,7 +59,7 @@ export class FormValidator {
     };
 
     getSummaryHtml() {
-        var html = '<h2 id="error-summary-title" class="nhsuk-error-summary__title">There is a problem</h2>';
+        var html = '<h2 id="errorSummary-heading" class="nhsuk-error-summary__title">There is a problem</h2>';
         html += '<div class="nhsuk-error-summary__body">';
         html += '<ul class="nhsuk-list nhsuk-error-summary__list">';
         for (var i = 0, j = this.errors.length; i < j; i++) {
