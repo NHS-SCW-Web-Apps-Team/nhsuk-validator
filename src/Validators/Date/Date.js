@@ -14,7 +14,6 @@ export function Date(day, month, year, typeOfDate, required = true, validator) {
         method: function (field) {
 
           function validateDate() {
-            console.log('in ValidateDate');
             var dValue = validator.form.elements[day].value.padStart(2, '0');
             var mValue = validator.form.elements[month].value.padStart(2, '0');
             var yValue = validator.form.elements[year].value;
@@ -25,7 +24,6 @@ export function Date(day, month, year, typeOfDate, required = true, validator) {
           }
 
           function isDirty() {
-            console.log('isDirty')
             var d = validator.form.elements[day].value.length > 0;
             var m = validator.form.elements[month].value.length > 0;
             var y = validator.form.elements[year].value.length > 0;
@@ -35,15 +33,12 @@ export function Date(day, month, year, typeOfDate, required = true, validator) {
 
           var isDirty = isDirty();
           if (required) {
-            console.log('required is true')
             return validateDate();
           }
           else if (isDirty > 0) {
-            console.log('date dirty so validate');
             return validateDate();
           }
           else {
-            console.log('required is false');
             return true;
           }
         },
